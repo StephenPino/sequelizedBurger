@@ -1,0 +1,62 @@
+<div class="container-fluid center-block">
+    <div class="row head">
+        <div class="col-md-12">
+            <h1 class="text-center">BURGER TIME!</h1>
+        </div>
+    </div>
+    <div class="row body">
+        <div class="col-md-4">
+            <h2>Burgers on The Menu</h2>
+
+            <ul>
+                {{#each burgers}} {{#unless this.devoured}}
+                <li>
+                    {{this.burger_name}}
+
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <input type="hidden" name="devoured" value="true">
+                        <button class="btn-success" type="submit">DEVOUR THE BURGER</button>
+                    </form>
+
+                </li>
+                {{/unless}} {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-md-4 add">
+            <h2>Add a Buger</h2>
+            <form class="create-update-form" action="/" method="POST">
+
+                <div class="form-group">
+                    <label for="ca">Burger Name:</label>
+                    <input type="text" id="ca" name="burger_name">
+                </div>
+
+                <button type="submit">Add Burger</button>
+            </form>
+        </div>
+
+        <div class="col-md-4">
+            <h2>Devoured Burgers</h2>
+
+            <ul>
+                {{#each burgers}} {{#if this.devoured}}
+                <li>
+                    {{this.burger_name}}
+
+                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                        <input type="hidden" name="devoured" value="false">
+                        <button class="btn-danger" type="submit">REGURGITATE BURGER <UP!></UP!></button>
+                    </form>
+                </li>
+                {{/if}} {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-center footer-text">Copyright &#xA9 Stephen Pino 2017</p>
+    </div>
+</footer>

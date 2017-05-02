@@ -1,0 +1,46 @@
+
+.container{
+    height: 100%;
+}
+
+.head {
+    padding: 12px;
+    background-color: #FED766;
+}
+
+.body {
+    height: 50%;
+    width: 100%;
+    background-color: #D5E3F2;
+    vertical-align: middle;
+}
+
+.add {
+    height: 25vh;
+    background-color: #D5E3F2;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: #D5E3F2;
+}
+
+.footer {
+  position: absolute;
+  padding-top: 20px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #0D0630;
+}
+
+.footer-text {
+    color: #fff;
+}
