@@ -44,3 +44,8 @@ body {
 .footer-text {
     color: #fff;
 }
+
+img {
+    height: 200px;
+    width: 300px;
+}

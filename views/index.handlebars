@@ -2,6 +2,7 @@
     <div class="row head">
         <div class="col-md-12">
             <h1 class="text-center">BURGER TIME!</h1>
+            <img class="center-block" src = "https://img.clipartfest.com/988e75d3c85366a3c8bbdd20657226b7_burger-clipart-free-hamburger-clipart-with-transparent-background_639-473.png">
         </div>
     </div>
     <div class="row body">
@@ -44,9 +45,9 @@
                 <li>
                     {{this.burger_name}}
 
-                    <form action="/{{this.id}}?_method=PUT" method="POST">
+                    <form action="/{{this.id}}?_method=DELETE" method="POST">
                         <input type="hidden" name="devoured" value="false">
-                        <button class="btn-danger" type="submit">REGURGITATE BURGER <UP!></UP!></button>
+                        <button class="btn-danger" type="submit">THROW AWAY REMAINS <UP!></UP!></button>
                     </form>
                 </li>
                 {{/if}} {{/each}}
