@@ -1,3 +1,3 @@
 # sequelizedBurger
-## Demo App:
+## Live Demo:
 https://whispering-ridge-76336.herokuapp.com/
