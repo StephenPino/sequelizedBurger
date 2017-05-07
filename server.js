@@ -11,7 +11,7 @@ var methodOverride = require('method-override');
 // Requiring our models for syncing
 var db = require("./models");
 
-var PORT = process.env.JAWSDB_URL || 8080;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 
